@@ -1,201 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700|Source+Sans+Pro:400,600,700&display=swap");
+
+
 body {
-    margin: 0;
-      padding: 0;
-      background-color: #000000;
-      text-shadow: 0 0 60px rgba(202,228,225,0.8);
-      color: #000000;
+  background: #ddeefc;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+}
+* {
+  box-sizing: border-box;
+  &:focus {
+    outline: none;
+  }
+}
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  padding: 50px 15px;
+  @media screen and (max-width: 700px), (max-height: 500px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+.card-form {
+  max-width: 570px;
+  margin: auto;
+  width: 100%;
+
+  @media screen and (max-width: 576px) {
+    margin: 0 auto;
   }
 
-  .menu {
-      position: fixed;
-      background-color: #1D309F;
-      text-align: center;
-      width: 100%;
-      margin-top: -10px;
-      margin-left: -10px;
-      padding : 20px;
-      font-size: 25px;
-      z-index: 5;
-      animation: pulsate 1.5s infinite alternate;  
-      border: 0.2rem solid #fff;
-      padding: 0.4em;
-      box-shadow: 0 0 .2rem #fff,
-                0 0 .2rem #fff,
-                0 0 2rem #bc13fe,
-                0 0 0.8rem #bc13fe,
-                0 0 2.8rem #bc13fe,
-                inset 0 0 1.3rem #bc13fe; 
-  }
+  &__inner {
+    background: #fff;
+    // box-shadow: 3px 13px 30px 0px rgba(21, 34, 67, 0.2);
+    box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+    border-radius: 10px;
+    padding: 35px;
+    padding-top: 180px;
 
-  @keyframes pulsate {
-        
-      100% {
-    
-          text-shadow:
-          0 0 4px #fff,
-          0 0 11px #fff,
-          0 0 19px #fff,
-          0 0 40px #bc13fe,
-          0 0 80px #bc13fe,
-          0 0 90px #bc13fe,
-          0 0 100px #bc13fe,
-          0 0 150px #bc13fe;
-      
-      }
-      
-      0% {
-    
-        text-shadow:
-        0 0 2px #fff,
-        0 0 4px #fff,
-        0 0 6px #fff,
-        0 0 10px #bc13fe,
-        0 0 45px #bc13fe,
-        0 0 55px #bc13fe,
-        0 0 70px #bc13fe,
-        0 0 80px #bc13fe;
-    
+    @media screen and (max-width: 480px) {
+      padding: 25px;
+      padding-top: 165px;
+    }
+    @media screen and (max-width: 360px) {
+      padding: 15px;
+      padding-top: 165px;
     }
   }
-
-  .lien {
-      position: relative;
-      top: -20px;
-      padding: 10px;
-      margin: 100px;
-  }
-
-  a {
-      text-decoration: none;
-      width: 50%;
-      color: black;
-      
-  }
-
-  a:hover {
-      opacity: 50%;
-      color: rgb(0, 131, 245);
-  }
-
-  .logo {
-      border-radius: 25%;
-      width: 100px;
-      padding: 0;
-      margin: 0;
-  }
-
-  .text {
-      position: relative;
-      right: -1100px;
-      top: -150px;
-      text-align: center;
-      color: rgb(255, 255, 255);
-      width: 700px;
-  }
-
-  footer {
-      position: relative;
-      top: 150px;
-  }
-
-  .plateau {
-      width: 750px;
-      height: 750px;
-      position: relative;
-      top: 150px;
-      right: -570px;
-  }
-
-
-  .carte1 {
-      width: 300px;
-      height: 300px;
-      position: relative;
-      top: -300px;
-      left: -600px;
-
-  }
-
-  .carte2 {
-      width: 300px;
-      height: 300px;
-      position: relative;
-      top: 100px;
-      left: -900px;
-
-  }
-
-  .carte3 {
-      width: 300px;
-      height: 300px;
-      position: relative;
-      top: -300px;
-      left: 100px;
-
-  }
-
-  .carte4 {
-      width: 300px;
-      height: 300px;
-      position: relative;
-      top: -200px;
-      left: 1450px;
-
-  }
-
-    
-  /* carte de credit */
-
-  @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700|Source+Sans+Pro:400,600,700&display=swap");
-
-
-  body {
-    background: #ddeefc;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 16px;
-  }
-  * {
-    box-sizing: border-box;
-    &:focus {
-      outline: none;
-    }
-  }
-  .wrapper {
-    min-height: 100vh;
-    display: flex;
-    padding: 50px 15px;
-    @media screen and (max-width: 700px), (max-height: 500px) {
-      flex-wrap: wrap;
-      flex-direction: column;
-    }
-  }
-
-  .card-form {
-    max-width: 570px;
-    margin: auto;
-    width: 100%;
-
-    @media screen and (max-width: 576px) {
-      margin: 0 auto;
-    }
-
-    &__inner {
-      background: #fff;
-      // box-shadow: 3px 13px 30px 0px rgba(21, 34, 67, 0.2);
-      box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
-      border-radius: 10px;
-      padding: 35px;
-      padding-top: 180px;
-
-      @media screen and (max-width: 480px) {
-        padding: 25px;
-        padding-top: 165px;
-      }
-      @media screen and (max-width: 360px) {
-        padding: 15px;
-        padding-top: 165px;
-      }
-    }
 
   &__row {
     display: flex;
